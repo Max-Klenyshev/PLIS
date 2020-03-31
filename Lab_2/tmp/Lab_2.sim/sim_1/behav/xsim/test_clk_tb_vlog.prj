@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../rtl/Counter_8.v" \
+"../../../../../rtl/KEY_Debounce.v" \
+"../../../../../rtl/KEY_Pressing.v" \
+"../../../../../rtl/KEY_Switching.v" \
+"../../../../../rtl/REG_Event.v" \
+"../../../../../rtl/Register_10.v" \
+"../../../../../rtl/mainframe.v" \
+"../../../../../tb/test_clk_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
